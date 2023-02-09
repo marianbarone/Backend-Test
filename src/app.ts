@@ -43,5 +43,5 @@ let app = server.build();
 if(SHOW_API_DOCS) app.use("/docs", swaggerUi.serve, swaggerUi.setup(specs));
 app.get("/", (req: Request, res: Response) => res.json({ status: 'Activar REST API runing ok' }))
 app.use('*', (req: Request, res: Response) => errorHandler(new HttpException(404, 'Resource not found'), res))
-
+//test
 export { app };
